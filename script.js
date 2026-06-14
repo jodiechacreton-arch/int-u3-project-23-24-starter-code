@@ -11,6 +11,7 @@ let Button_8= document.querySelector('.button-8');
 let Magical_Pencil = document.querySelector('.magical-pencil');
 let Results= document.querySelector('.results');
 let Play_Again= document.querySelector('.play-again')
+let Play_Againn= document.querySelector('.play-again2')
 
 
 let resultPage = document.querySelector ('.results-page')
@@ -43,7 +44,7 @@ Results.addEventListener('click', function() {
 });
 
 
-Play_Again.addEventListener('click', function() {
+Play_Againn.addEventListener('click', function() {
     resultPage.style.display = "none";
     opening.style.display = "block";
 });
