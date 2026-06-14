@@ -1,8 +1,12 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 .option-one-screen, 
-.option-two-screen, 
-.option-one-end, 
-.option-two-end
+.option-two-screen,
+.pink, 
+.purple,
+.red,
+.blue,
+.start-writing,
+.results-page
 {
     display: none;
 }
@@ -19,7 +23,7 @@ body {
 /* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -29,7 +33,10 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #e3632e;
 }
+
+
 
 /* Style the story opening container */
 
@@ -58,17 +65,38 @@ body {
 
 
 /* Style the story image */
-.story-opening img {
-    max-width: 100px;
+.opening img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.blue img {
+    max-width: 800px;
     height: auto;
     margin-bottom: 10px;
 }
 
 /* Style the story opening message */
-.story-opening h1 {
+.opening h3 {
     font-size: 20px;
     margin-bottom: 20px;
+    color: #208700;
 }
+.start-writing h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.red h3 {
+    background-color: #b0073c;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Times, Times New Roman, serif;
+}
+
 
 /* Style the buttons container */
 .buttons {
@@ -80,17 +108,24 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: #e3632e;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.button-5 {
+    background-color: #b0073c;
+}
+.button-6 {
+    background-color: #800080;
+}
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #3dea93;
 }
+
 
 /* Style the screens for option one and option two */
 .option-one-screen,
